@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab:wght@300;400&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95vw;
+  min-height: 90vh;
+  margin: auto;
+}
+
+.everything {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  width: 350px;
+  overflow-x: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.02);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.02);
+}
+
+.everything .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff1482;
+  color: #fff;
+}
+
+.everything .heading img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 7px;
+}
+
+.everything .heading h3 {
+  font-size: 1.4rem;
+  font-family: "Jost", sans-serif;
+  padding-top: 5px;
+}
+
+.everything .heading h4 {
+  font-size: 1.2rem;
+  font-family: "Jost", sans-serif;
+  margin-top: -.22rem;
+}
+
+.everything .heading p {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  margin-top: .2rem;
+  margin-bottom: 0.2rem;
+}
+
+.everything .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+  margin-top: .5rem;
+  padding-left: 2rem;
+}
+
+.everything .nav p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: #837979;
+  position: relative;
+}
+
+.everything .nav p.active {
+  color: #000;
+}
+
+.everything .nav p.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  top: -12px;
+  left: 0;
+}
+
+.everything .nav p:hover, .everything .nav p:focus {
+  color: #000;
+}
+
+.everything .nav p::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  -webkit-transition: top 0.4s ease-in;
+  transition: top 0.4s ease-in;
+}
+
+.everything .nav p:hover::before {
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  top: -12px;
+}
+
+.everything .propo-content {
+  padding: 5px 0 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.everything .propo-content .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  width: 20ch;
+}
+
+.everything .propo-content .exp span {
+  font-size: 2.1rem;
+}
+
+.everything .price {
+  text-align: center;
+  color: #ff1482;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  margin-bottom: .9rem;
+}
+
+.everything .btn-container {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.everything .btn-container button {
+  padding: 1rem 1rem;
+  background-color: #ff1482;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.intro-content h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.intro-content p {
+  width: 30ch;
+  font-family: "Jost", sans-serif;
+}
+
+.disappear {
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  height: 0;
+  overflow: hidden;
+}
+
+.appear {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  height: auto;
+}
+
+.non {
+  display: none;
+}
+
+.marge {
+  margin: 1.5rem 0 1.5rem 2rem;
+}
+/*# sourceMappingURL=style.css.map */
